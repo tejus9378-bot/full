@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            /*flex-flow: column wrap;*/
+            flex-direction: row;
+            flex-wrap: wrap;
+            background-color: rgb(106, 0, 0,0.3);
+            justify-content: center;
+            justify-content: space-around;
+            min-height: 1000px;
+            min-width: auto;
+            align-items: center;
+        }
+        .box{
+            font-size: 20px;
+            max-width: 50px;
+            min-width: 50px;
+            max-height: 50px;
+            min-height: 50px;
+            background-color: cadetblue;
+            border-radius: 10%;
+            padding: 5%;
+            overflow: hidden;
+        }
+        .box:hover{
+            max-height: auto;
+        }
+        .div-nav{
+            margin-top: 50px;
+            position: sticky;
+            top: 0px;
+            place-items: center;
+            width: 100px;
+            height: 70px;
+            background: linear-gradient(90deg, rgb(26, 121, 255), red);
+            background-size: 400% 400%;
+            animation: gradient 0.5s ease infinite;
+            border-radius: 20px;
+            transform-style: preserve-3d;
+        }
+        @keyframes waveMove{
+            0%{
+                background-position: 0% 50%;
+            }
+            50%{
+                background-position: 100% 50%;
+            }
+            100%{
+                background-position: 0% 50%;
+            }
+        }
+        @keyframes gradient{
+            0%{
+                background: linear-gradient(90deg, red, blue);
+            }
+            50%{
+                background: linear-gradient(135deg, red, blue);
+            }
+            100%{
+                background: linear-gradient(deg, red, blue);
+            }
+        }
+    </style>
+</head>
+<body>
+    
+</body>
+</html>
